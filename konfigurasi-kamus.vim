@@ -1,4 +1,4 @@
-let g:english_words_file = expand('~/.vim/plugged/koreksi-bahasa-inggris-pada-markdown-dengan-vim/english-words.txt')
+let g:english_words_file = expand('~/.vim/plugged/koreksi-bahasa-inggris-pada-markdown-dengan-vim/kumpulan-kata-bahasa-inggris.txt')
 let g:english_words_pattern = '\v\m\<(' . join(readfile(g:english_words_file), '\|') . '\>'
 let g:italic_enabled = 0
 
