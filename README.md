@@ -1,3 +1,8 @@
+> [!WARNING]  
+> Proyek sedang dalam tindak lanjut.
+
+---
+
 # Koreksi Bahasa Inggris Pada Markdown Dengan Vim
 Terlalu panjang? Ya, ada ide lebih baik?
 
