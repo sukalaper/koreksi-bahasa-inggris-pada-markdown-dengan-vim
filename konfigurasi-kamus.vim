@@ -1,4 +1,4 @@
-let g:english_words_file = expand('~/.vim/english-words.txt')
+let g:english_words_file = expand('~/.vim/plugged/koreksi-bahasa-inggris-pada-markdown-dengan-vim/english-words.txt')
 let g:english_words_pattern = '\v\m\<(' . join(readfile(g:english_words_file), '\|') . '\>'
 let g:italic_enabled = 0
 
@@ -6,14 +6,14 @@ function! ToggleItalic()
   if g:italic_enabled
     autocmd! MarkdownAutoCmd
     let g:italic_enabled = 0
-    echo "Italic mode disabled!"
+    echo "Kamus koreksi pada bahasa Inggris di nonaktifkan!"
   else
     augroup MarkdownAutoCmd
       autocmd!
       autocmd BufWritePre *.md call AddItalicForEnglishWords()
     augroup END
     let g:italic_enabled = 1
-    echo "Italic mode enabled!"
+    echo "Kamus koreksi pada bahasa Inggris di aktifkan!"
   endif
 endfunction
 
